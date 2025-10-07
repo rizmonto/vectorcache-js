@@ -1,0 +1,53 @@
+{
+  "name": "vectorcache",
+  "version": "0.1.0",
+  "description": "Official TypeScript/JavaScript SDK for Vectorcache - Intelligent LLM caching layer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "llm",
+    "caching",
+    "ai",
+    "openai",
+    "anthropic",
+    "semantic-search",
+    "vector",
+    "embeddings",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Vectorcache Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vectorcache/vectorcache-js.git"
+  },
+  "homepage": "https://vectorcache.com",
+  "bugs": {
+    "url": "https://github.com/vectorcache/vectorcache-js/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.7.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.0",
+    "@typescript-eslint/parser": "^8.46.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.4",
+    "typescript": "^5.9.3"
+  }
+}
