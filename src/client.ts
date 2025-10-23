@@ -140,7 +140,7 @@ export class VectorcacheClient {
     const timeout = options?.timeout || this.timeout;
 
     const headers: Record<string, string> = {
-      'Authorization': `Bearer ${this.apiKey}`,
+      'X-API-Key': this.apiKey,
       'Content-Type': 'application/json',
       'User-Agent': 'vectorcache-js/0.1.0'
     };

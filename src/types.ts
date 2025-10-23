@@ -3,9 +3,18 @@
  * Generated from FastAPI Pydantic schemas
  */
 
+export interface Message {
+  /** Message role: 'system', 'user', or 'assistant' */
+  role: 'system' | 'user' | 'assistant';
+  /** Message content */
+  content: string;
+}
+
 export interface SemanticQueryRequest {
-  /** The query text to cache or retrieve */
-  query: string;
+  /** The query text to cache or retrieve (simple format) */
+  query?: string;
+  /** Messages array (OpenAI/Anthropic format) - use either query or messages, not both */
+  messages?: Message[];
   /** Additional context for the query */
   context?: string;
   /** Optional metadata for the query */
